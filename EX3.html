@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devinez le chiffre</title>
+</head>
+
+<body>
+    <script>
+        function devinerChiffre() {
+            var chiffreCorrect = 5;
+            var utilisateurChiffre = prompt("Devinez un chiffre entre 0 et 10:");
+
+            if (utilisateurChiffre === chiffreCorrect.toString()) {
+                alert("Bravo ! Vous avez trouvé le bon chiffre : " + chiffreCorrect);
+            } else {
+                alert("Dommage ! Le bon chiffre était : " + chiffreCorrect);
+            }
+        }
+        devinerChiffre();
+    </script>
+</body>
+
+</html>

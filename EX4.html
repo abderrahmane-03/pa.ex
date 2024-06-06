@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commentaire selon l'âge</title>
+</head>
+
+<body>
+    <script>
+        function fournirCommentaire() {
+            var age = prompt("Quel est votre âge ?");
+
+            if (age !== null) {
+                age = parseInt(age);
+                var commentaire;
+
+                if (age >= 1 && age <= 17) {
+                    commentaire = "Vous n'êtes pas encore majeur.";
+                } else if (age >= 18 && age <= 49) {
+                    commentaire = "Vous êtes majeur mais pas encore senior.";
+                } else if (age >= 50 && age <= 59) {
+                    commentaire = "Vous êtes senior mais pas encore retraité.";
+                } else if (age >= 60 && age <= 120) {
+                    commentaire = "Vous êtes retraité, profitez de votre temps libre !";
+                } else {
+                    commentaire = "Âge invalide. Veuillez entrer un âge entre 1 et 120.";
+                }
+
+                alert(commentaire);
+            } else {
+                alert("Vous avez annulé la saisie.");
+            }
+        }
+        fournirCommentaire();
+    </script>
+</body>
+
+</html>
